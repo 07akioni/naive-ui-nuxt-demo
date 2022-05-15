@@ -1,5 +1,9 @@
 # Naive UI Nuxt Debug
 
+## **!!! It doesn't work now !!!**
+
+We will make it work gradually.
+
 Look at the [nuxt 3 documentation](https://v3.nuxtjs.org) to learn more.
 
 ## Setup
