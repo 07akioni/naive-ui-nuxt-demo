@@ -1,0 +1,14 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview"
+  },
+  "devDependencies": {
+    "@css-render/vue3-ssr": "^0.15.9",
+    "naive-ui": "^2.28.4",
+    "nuxt": "3.0.0-rc.3"
+  }
+}
