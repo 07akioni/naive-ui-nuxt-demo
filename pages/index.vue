@@ -241,6 +241,7 @@
                 <NStep title="NStep2" description="NStep2" />
               </NSteps>
               <NGlobalStyle />
+              <NDivider>!!! Buggy Zone !!!</NDivider>
               <!-- BUG: doesn't behavior as expected -->
               <NAnchor ignore-gap>
                 <NAnchorLink title="NAnchorLink NP" href="#NP" />
