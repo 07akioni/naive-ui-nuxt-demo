@@ -5,6 +5,7 @@
         <NLoadingBarProvider>
           <NDialogProvider>
             <NSpace vertical>
+              <Provided />
               <NButton>Button</NButton>
               <NInput placeholder="NInput" />
               <NInputNumber placeholder="NInputNumger" />
@@ -437,6 +438,7 @@ import {
   NWatermark,
   NRow,
 } from "naive-ui";
+import Provided from './Provided.vue'
 
 const selectOptions = [
   { label: "label1", value: "value1", key: "key1", labelX: "labelX1" },
