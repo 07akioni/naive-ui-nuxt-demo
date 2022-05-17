@@ -1,8 +1,10 @@
-# Naive UI Nuxt Debug
+# Naive UI Nuxt Demo
 
-## **!!! It doesn't work now !!!**
+## Prequisite
 
-We will make it work gradually.
+Make sure you have `naive-ui@>=2.29.0` installed.
+
+Personally I recommend you using pnpm to install deps.
 
 Look at the [nuxt 3 documentation](https://v3.nuxtjs.org) to learn more.
 
