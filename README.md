@@ -10,6 +10,13 @@ Look at the [nuxt 3 documentation](https://v3.nuxtjs.org) to learn more.
 
 ## Setup
 
+Clone this repo
+
+```bash
+git clone https://github.com/07akioni/naive-ui-nuxt-demo.git
+cd naive-ui-nuxt-demo
+```
+
 Make sure to install the dependencies:
 
 ```bash
