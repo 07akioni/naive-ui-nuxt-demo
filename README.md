@@ -10,7 +10,7 @@ Look at the [nuxt 3 documentation](https://v3.nuxtjs.org) to learn more.
 
 ## Setup
 
-Clone this repo
+You can clone this repo.
 
 ```bash
 git clone https://github.com/07akioni/naive-ui-nuxt-demo.git
