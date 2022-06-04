@@ -243,6 +243,19 @@
               </NSteps>
               <NGlobalStyle />
               <NDivider>!!! Buggy Zone !!!</NDivider>
+              <!-- If you want scrollbar to show, make sure vue's version >= 3.2.36 -->
+              <NScrollbar style="height: 100px">
+                NScrollbar<br />
+                NScrollbar<br />
+                NScrollbar<br />
+                NScrollbar<br />
+                NScrollbar<br />
+                NScrollbar<br />
+                NScrollbar<br />
+                NScrollbar<br />
+                NScrollbar<br />
+                NScrollbar<br />
+              </NScrollbar>
               <!-- BUG: doesn't behavior as expected -->
               <NAnchor ignore-gap>
                 <NAnchorLink title="NAnchorLink NP" href="#NP" />
@@ -266,19 +279,6 @@
               />
               <!-- BUG: doesn't show or hide as expected -->
               <NBackTop :visibility-height="500">BackTop</NBackTop>
-              <!-- BUG: scrollbar doesn't show -->
-              <NScrollbar style="height: 100px">
-                NScrollbar<br />
-                NScrollbar<br />
-                NScrollbar<br />
-                NScrollbar<br />
-                NScrollbar<br />
-                NScrollbar<br />
-                NScrollbar<br />
-                NScrollbar<br />
-                NScrollbar<br />
-                NScrollbar<br />
-              </NScrollbar>
               <!-- BUG: can't switch images -->
               <NImageGroup>
                 <NImage
