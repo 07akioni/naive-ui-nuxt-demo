@@ -16,7 +16,6 @@
               />
               <NCascader placeholder="NCascader" :options="cascaderOptions" />
               <NMention placeholder="NMention" :options="selectOptions" />
-              <NTransfer :options="selectOptions" />
               <NPopconfirm>
                 <template #trigger>
                   <NButton>NPopconfirm</NButton>
@@ -291,6 +290,8 @@
                 />
               </NImageGroup>
               <!-- BUG: break & tree data -->
+              <!-- transfer mismatch -->
+              <!-- <NTransfer :options="selectOptions" /> -->
               <!-- <NDataTable
                 :columns="[
                   { key: 'label', title: 'Label' },
