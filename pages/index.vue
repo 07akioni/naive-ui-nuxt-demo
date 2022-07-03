@@ -256,10 +256,7 @@
                 NScrollbar<br />
               </NScrollbar>
               <!-- BUG: doesn't behavior as expected -->
-              <NAnchor ignore-gap>
-                <NAnchorLink title="NAnchorLink NP" href="#NP" />
-                <NAnchorLink title="NAnchorLink NH1" href="#NH1" />
-              </NAnchor>
+
               <!-- BUG: position of overflow count isn't correct -->
               <NAvatarGroup
                 :options="[
@@ -276,9 +273,14 @@
                 :size="40"
                 :max="2"
               />
-              <!-- BUG: doesn't show or hide as expected -->
               <NBackTop :visibility-height="500">BackTop</NBackTop>
-              <!-- BUG: can't switch images -->
+              <NDataTable
+                :columns="[
+                  { key: 'label', title: 'Label' },
+                  { key: 'labelX', title: 'LabelX' },
+                ]"
+                :data="selectOptions"
+              />
               <NImageGroup>
                 <NImage
                   width="100"
@@ -292,13 +294,11 @@
               <!-- BUG: break & tree data -->
               <!-- transfer mismatch -->
               <!-- <NTransfer :options="selectOptions" /> -->
-              <!-- <NDataTable
-                :columns="[
-                  { key: 'label', title: 'Label' },
-                  { key: 'labelX', title: 'LabelX' },
-                ]"
-                :data="selectOptions"
-              /> -->
+
+              <!-- <NAnchor ignore-gap>
+                <NAnchorLink title="NAnchorLink NP" href="#NP" />
+                <NAnchorLink title="NAnchorLink NH1" href="#NH1" />
+              </NAnchor> -->
               <!-- BUG: break -->
               <!-- <NWatermark /> -->
               <!-- BUG: break -->
@@ -439,7 +439,7 @@ import {
   NWatermark,
   NRow,
 } from "naive-ui";
-import Provided from './Provided.vue'
+import Provided from "./Provided.vue";
 
 const selectOptions = [
   { label: "label1", value: "value1", key: "key1", labelX: "labelX1" },
