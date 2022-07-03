@@ -14,30 +14,30 @@ import {
   useDialog,
   useLoadingBar,
   NButton,
-  NSpace,
-} from "naive-ui";
+  NSpace
+} from 'naive-ui'
 
-const message = useMessage();
-const notification = useNotification();
-const dialog = useDialog();
-const loadingBar = useLoadingBar();
+const message = useMessage()
+const notification = useNotification()
+const dialog = useDialog()
+const loadingBar = useLoadingBar()
 
 const cb1 = () => {
-  message.info("message");
-};
+  message.info('message')
+}
 
 const cb2 = () => {
-  notification.info({ title: "notification" });
-};
+  notification.info({ title: 'notification' })
+}
 
 const cb3 = () => {
-  dialog.info({ title: "dialog" });
-};
+  dialog.info({ title: 'dialog' })
+}
 
 const cb4 = () => {
-  loadingBar.start();
+  loadingBar.start()
   setTimeout(() => {
-    loadingBar.finish();
-  }, 1000);
-};
+    loadingBar.finish()
+  }, 1000)
+}
 </script>

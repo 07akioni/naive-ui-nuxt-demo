@@ -261,14 +261,14 @@
               <NAvatarGroup
                 :options="[
                   {
-                    src: 'https://gw.alipayobjects.com/zos/antfincdn/aPkFc8Sj7n/method-draw-image.svg',
+                    src: 'https://gw.alipayobjects.com/zos/antfincdn/aPkFc8Sj7n/method-draw-image.svg'
                   },
                   {
-                    src: 'https://07akioni.oss-cn-beijing.aliyuncs.com/07akioni.jpeg',
+                    src: 'https://07akioni.oss-cn-beijing.aliyuncs.com/07akioni.jpeg'
                   },
                   {
-                    src: 'https://gw.alipayobjects.com/zos/antfincdn/aPkFc8Sj7n/method-draw-image.svg',
-                  },
+                    src: 'https://gw.alipayobjects.com/zos/antfincdn/aPkFc8Sj7n/method-draw-image.svg'
+                  }
                 ]"
                 :size="40"
                 :max="2"
@@ -277,7 +277,7 @@
               <NDataTable
                 :columns="[
                   { key: 'label', title: 'Label' },
-                  { key: 'labelX', title: 'LabelX' },
+                  { key: 'labelX', title: 'LabelX' }
                 ]"
                 :data="selectOptions"
               />
@@ -437,32 +437,32 @@ import {
   NUpload,
   NUploadDragger,
   NWatermark,
-  NRow,
-} from "naive-ui";
-import Provided from "./Provided.vue";
+  NRow
+} from 'naive-ui'
+import Provided from './Provided.vue'
 
 const selectOptions = [
-  { label: "label1", value: "value1", key: "key1", labelX: "labelX1" },
-  { label: "label2", value: "value2", key: "key2", labelX: "labelX2" },
-];
+  { label: 'label1', value: 'value1', key: 'key1', labelX: 'labelX1' },
+  { label: 'label2', value: 'value2', key: 'key2', labelX: 'labelX2' }
+]
 const cascaderOptions = [
   {
-    label: "label1",
-    value: "value1",
-    children: [{ label: "label2", value: "value2" }],
-  },
-];
+    label: 'label1',
+    value: 'value1',
+    children: [{ label: 'label2', value: 'value2' }]
+  }
+]
 const treeOptions = [
   {
-    label: "label1",
-    key: "key1",
-    children: [{ label: "label2", key: "key2" }],
-  },
-];
-const showModal = ref(false);
-const showDrawer = ref(false);
-const showCollapseTransition = ref(true);
-const affixListenTo = () => document.documentElement;
+    label: 'label1',
+    key: 'key1',
+    children: [{ label: 'label2', key: 'key2' }]
+  }
+]
+const showModal = ref(false)
+const showDrawer = ref(false)
+const showCollapseTransition = ref(true)
+const affixListenTo = () => document.documentElement
 </script>
 
 <style>
