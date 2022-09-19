@@ -10,6 +10,6 @@
     "nuxt": "3.0.0-rc.10"
   },
   "dependencies": {
-    "@huntersofbook/naive-ui-nuxt": "^0.1.1"
+    "@huntersofbook/naive-ui-nuxt": "0.1.7"
   }
 }
