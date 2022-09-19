@@ -8,14 +8,6 @@
 </template>
 
 <script lang="ts" setup>
-import {
-  useMessage,
-  useNotification,
-  useDialog,
-  useLoadingBar,
-  NButton,
-  NSpace
-} from 'naive-ui'
 
 const message = useMessage()
 const notification = useNotification()
