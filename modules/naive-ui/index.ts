@@ -1,4 +1,5 @@
-import { createResolver, defineNuxtModule, addPlugin, extendViteConfig } from 'nuxt/kit'
+import { createResolver, defineNuxtModule, addPlugin, extendViteConfig, addComponent } from 'nuxt/kit'
+import naiveui from "naive-ui";
 
 export default defineNuxtModule({
   meta: {
@@ -42,5 +43,18 @@ export default defineNuxtModule({
         );
       });
     }
+
+    // Add imports for naive-ui components
+    const naiveComponents = Object.keys(naiveui).filter((name) =>
+      /^(N[A-Z]|n-[a-z])/.test(name)
+    );
+
+    naiveComponents.forEach((name) => {
+      addComponent({
+        export: name,
+        name: name,
+        filePath: "naive-ui",
+      });
+    });
   }
 })
