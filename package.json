@@ -7,7 +7,7 @@
     "preview": "nuxt preview"
   },
   "devDependencies": {
-    "@css-render/vue3-ssr": "^0.15.10",
+    "@css-render/vue3-ssr": "^0.15.12",
     "naive-ui": "^2.35.0",
     "nuxt": "^3.8.1"
   }
