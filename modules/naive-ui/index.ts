@@ -1,4 +1,4 @@
-import { createResolver, defineNuxtModule, addPlugin, extendViteConfig, addComponent } from 'nuxt/kit'
+import { createResolver, defineNuxtModule, addPlugin, extendViteConfig, addComponent, addImports } from 'nuxt/kit'
 import naiveui from "naive-ui";
 
 export default defineNuxtModule({
@@ -54,6 +54,25 @@ export default defineNuxtModule({
         export: name,
         name: name,
         filePath: "naive-ui",
+      });
+    });
+
+
+      // Add imports for naive-ui composables
+    const naiveComposables = [
+      "useDialog",
+      "useMessage",
+      "useNotification",
+      "useLoadingBar",
+      "useDialogReactiveList",
+      "useThemeVars",
+    ];
+
+    naiveComposables.forEach((name) => {
+      addImports({
+        name: name,
+        as: name,
+        from: "naive-ui",
       });
     });
   }
