@@ -9,6 +9,6 @@
   "devDependencies": {
     "@css-render/vue3-ssr": "^0.15.10",
     "naive-ui": "^2.35.0",
-    "nuxt": "3.0.0-rc.3"
+    "nuxt": "^3.8.1"
   }
 }
