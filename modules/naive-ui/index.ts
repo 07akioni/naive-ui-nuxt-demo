@@ -2,7 +2,10 @@ import { createResolver, defineNuxtModule, addPlugin, extendViteConfig } from 'n
 
 export default defineNuxtModule({
   meta: {
-    name: 'naive-ui'
+    name: 'naive-ui',
+    compatibility: {
+      nuxt: "^3.7.0",
+    },
   },
 
   // Add types for volar
