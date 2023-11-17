@@ -4,6 +4,16 @@ export default defineNuxtModule({
   meta: {
     name: 'naive-ui'
   },
+
+  // Add types for volar
+  hooks: {
+    "prepare:types": ({ references }) => {
+      references.push({
+        types: "naive-ui/volar",
+      });
+    },
+  },
+
   setup (options, nuxt) {
     const { resolve } = createResolver(import.meta.url)
     addPlugin(resolve('./runtime/plugin.server.ts'))
