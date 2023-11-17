@@ -5,7 +5,7 @@ export default defineNuxtModule({
     name: 'naive-ui'
   },
   setup () {
-      const { resolve } = createResolver(import.meta.url)
+    const { resolve } = createResolver(import.meta.url)
     addPlugin(resolve('./runtime/plugin.server.ts'))
    }
 })
