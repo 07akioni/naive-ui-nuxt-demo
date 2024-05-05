@@ -1,14 +1,19 @@
 {
+  "name": "nuxt-app",
   "private": true,
+  "type": "module",
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
-    "preview": "nuxt preview"
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
   },
-  "devDependencies": {
-    "@css-render/vue3-ssr": "^0.15.10",
-    "naive-ui": "^2.30.0",
-    "nuxt": "3.0.0-rc.3"
+  "dependencies": {
+    "naive-ui": "^2.38.2",
+    "nuxt": "^3.11.2",
+    "nuxtjs-naive-ui": "^1.0.0",
+    "vue": "^3.4.21",
+    "vue-router": "^4.3.0"
   }
 }

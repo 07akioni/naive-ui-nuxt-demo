@@ -4,38 +4,41 @@
 
 Make sure you have `naive-ui@>=2.29.0` installed.
 
-Personally I recommend you using pnpm to install deps.
-
-Look at the [nuxt 3 documentation](https://v3.nuxtjs.org) to learn more.
+Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
 
 ## Setup
-
-You can clone this repo.
-
-```bash
-git clone https://github.com/07akioni/naive-ui-nuxt-demo.git
-cd naive-ui-nuxt-demo
-```
 
 Make sure to install the dependencies:
 
 ```bash
-# yarn
-yarn install
-
 # npm
 npm install
 
 # pnpm
-pnpm install --shamefully-hoist
+pnpm install
+
+# yarn
+yarn install
 ```
+
+## Nuxt module
+
+This demo uses official module `nuxtjs-naive-ui` to adapt SSR of Nuxt.js. If you
+got CSS-in-JS related error, please see [caveat of the module](https://github.com/07akioni/nuxtjs-naive-ui).
 
 ## Development Server
 
-Start the development server on http://localhost:3000
+Start the development server on `http://localhost:3000`:
 
 ```bash
+# npm
 npm run dev
+
+# pnpm
+pnpm dev
+
+# yarn
+yarn dev
 ```
 
 ## Production
@@ -43,13 +46,27 @@ npm run dev
 Build the application for production:
 
 ```bash
+# npm
 npm run build
+
+# pnpm
+pnpm build
+
+# yarn
+yarn build
 ```
 
 Locally preview production build:
 
 ```bash
+# npm
 npm run preview
+
+# pnpm
+pnpm preview
+
+# yarn
+yarn preview
 ```
 
-Checkout the [deployment documentation](https://v3.nuxtjs.org/docs/deployment) for more information.
+Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
